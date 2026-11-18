@@ -1,0 +1,23 @@
+
+.container {
+    width: 320px;
+    background-color: lightblue;
+    border: 2px dashed blue;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.wrong-card {
+    box-sizing: content-box;
+    background-color: red;
+}
+
+.correct-card {
+    box-sizing: border-box;
+    background-color: lime;
+}

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <h2>1. Неправильная карточка: content-box</h2>
+
+    <div class="container">
+        <div class="card wrong-card">
+            <p>Неправильная карточка</p>
+            <p>Ширина 364 px</p>
+        </div>
+    </div>
+
+    <h3>Пояснение:</h3>
+
+    <p>При box-sizing: content-box свойство width задаёт только ширину содержимого.</p>
+    <p>К ней дополнительно прибавляются внутренние отступы и границы:</p>
+    <p>320 + 20 + 20 + 2 + 2 = 364 px.</p>
+    <p>Карточка выходит за пределы контейнера на 44 px.</p>
+
+    <hr>
+
+    <h2>2. Правильная карточка: border-box</h2>
+
+    <div class="container">
+        <div class="card correct-card">
+            <p>Исправленная карточка</p>
+            <p>Ширина 320 px</p>
+        </div>
+    </div>
+
+    <h3>Пояснение:</h3>
+
+    <p>Для карточки задано box-sizing: border-box.</p>
+    <p>Теперь width включает содержимое, внутренние отступы и границы.</p>
+    <p>Общая ширина карточки составляет ровно 320 px.</p>
+    <p>320 - 40 - 4 = 276 px содержимого.</p>
+    <p>Карточка полностью помещается в контейнер.</p>
+
+</body>
+</html>
